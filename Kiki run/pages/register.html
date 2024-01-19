@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset="UTF-8">
+    <title>Register-page</title>
+    <link rel="stylesheet" href="../stylesheet/style.css">
+    <script src='/Kiki run/js/register.js'></script>
+    
+      <!--  fonts link-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+     <!--boxicons link-->  
+    <link rel="stylesheet"href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+  </head>
+
+  <body>
+    <section class="object">
+      <div class="logo">
+        <h1><a href="/Kiki run/index.html">~Kiki's Run~</a></h1>
+      </div>
+        
+      <header>
+    <!--navigations-->
+       <nav class="navlist">
+        <a href="/Kiki run/pages/login.html"  id="Login-page">Login/Register</a>
+        <a href="/Kiki run/pages/login.html" id="logoutButton">Logout</a>
+        <a href="/Kiki run/pages/help.html"  id="Help-page">Help</a>
+        <a href="/Kiki run/pages/leaderboard.html" id="Leaderboard-page">Leaderboard</a>
+       </nav>
+      </header>
+  <!--register dashboard-->
+      <div class="Box">
+        <a href="/Kiki run/pages/login.html" id="button">
+          <i class='bx bx-arrow-back'></i>
+        </a>
+        <!--Dashboard title-->
+      <h1>Register</h1>
+      <div class="hero-img">
+        <img src="/Kiki run/images/cat.gif" alt="dancing cat">
+      </div>
+      <!--sub board inside the main-->
+        <section class="grids">
+          <div id='error'></div>
+          <div id='register'></div>
+          <form id = 'registration' onsubmit='return validateForm()'>
+          <!--Register inputs-->
+          
+          <div class="input-box">
+            <input type="text" id="email" placeholder="Enter your Email">
+            <i class='bx bxs-user'></i>
+          </div>
+          
+          <div class="input-box">
+            <input type="text" id="username" placeholder="Enter your username">
+            <i class='bx bxs-user'></i>
+          </div>
+          
+          <div class="input-box">
+            <input type="password" id="password" placeholder="Enter your password" autocomplete='on'>
+            <i class='bx bxs-lock'></i>
+          </div>
+          
+          <div class="input-box">
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" autocomplete='on'>
+          </div>
+          
+          <div class="dropbox">
+            <label for="Gender">Choose your Gender:</label>
+            <select name="Gender" id="Gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+              <option value="Prefer not to say">Prefer not to Say</option>
+            </select>
+          </div>
+      <!--register button is connected login page-->
+      <button type='submit' onclick='storeUser()' class="btn">Register</button>
+
+      </form>
+      
+      <p id='showMessage'></p>
+    </div>
+</div>
+</section>
+</body>
+</html>
+  

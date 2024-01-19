@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Gochi+Hand&family=Pixelify+Sans&family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;1,200;1,500;1,600;1,800&family=Sriracha&family=Zhi+Mang+Xing&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+/* section for the whole page */
+
+.object {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/kiki.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+/* Main Game title */
+
+.logo h1 a {
+  position: relative;
+  display: block;
+  font-size: 120px;
+  font-weight: 800;
+  text-decoration: none;
+  color: white;
+  font-family: "Zhi Mang Xing", cursive;
+}
+
+/*Nav-bar */
+
+.object header {
+  display: inline-flex;
+  float: right;
+  justify-content: space-between;
+  padding: 30px 0 50px;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist a {
+  float: right;
+  text-decoration: none;
+  color: white;
+  margin-left: 40px;
+  font-size: 26px;
+  font-weight: 800;
+  border-bottom: 2px solid transparent;
+
+  transition: 0.4s;
+}
+
+.navlist a:hover {
+  border-bottom: 2px solid white;
+  box-shadow: 0 12px 16px 0 #e8e8e8f8;
+}
+
+/* cat-gif */
+
+img {
+  position: absolute;
+  top: 5%;
+  left: 72%;
+  height: 90px;
+  width: 100px;
+}
+.object i {
+  position: relative;
+  font-size: 25px;
+  color: #fff;
+}
+/*Main Game board */
+
+.Box {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.Box {
+  height: 520px;
+  width: 600px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 5px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+/*title for the box */
+
+.Box h1 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  font-family: Gochi hand, cursive;
+  color: white;
+}
+
+/* sub gameboard nested inside the main*/
+
+.grids {
+  position: absolute;
+  height: 350px;
+  width: 500px;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.grids {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Input boxes*/
+
+.Box .input-box {
+  justify-content: center;
+  align-items: center;
+  right: 50%;
+  width: 100%;
+  height: 50px;
+  margin: 15px 0;
+}
+
+.input-box input {
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid;
+  border-radius: 40px;
+  padding: 10px 20px 8px 10px;
+  border-color: white;
+  font-size: 16px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+/*icon properties */
+
+.input-box i {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+}
+/*properties of the dropbox and the checkbox*/
+
+.dropbox,
+.check-box {
+  font-family: Gnochi hand, cursive;
+  font-size: 20px;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 3%;
+}
+/*submit button */
+
+.grids .btn {
+  width: 30%;
+  height: 35px;
+  left: 10%;
+  margin-top: auto;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+  position: static;
+  text-align: center;
+}
+/* link to the register page */
+
+.Box .register-link {
+  font-size: 20px;
+  font-family: Gnochi hand, cursive;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-top: 25px 0 15px;
+}
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+}
+
+/* Index page */
+
+.main .btn {
+  width: 30%;
+  height: 40px;
+  background: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 25px 10px 0px 15px;
+  padding: 0 5px;
+}
+/* Game text*/
+.main p {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  font-family: Gochi Hand, cursive;
+  color: white;
+}
+
+/* Main board */
+
+.board img {
+  position: absolute;
+  top: 4%;
+  left: 80%;
+  height: 80px;
+  width: 80px;
+}
+
+/* Board for game-instructions */
+
+.Gameplay {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.Gameplay {
+  text-align: centers;
+  height: 520px;
+  width: 600px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.Gameplay h2 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  font-family: Gochi Hand, cursive;
+  color: white;
+}
+
+.Gameplay img {
+  top: 42%;
+  left: 70%;
+  height: 120px;
+  width: 120px;
+}
+
+.Gameplay p {
+  display: inline-block;
+  color: white;
+  font-size: 32px;
+  font-weight: 600;
+  font-family: Gochi Hand, cursive;
+}
+
+/*Board for leaderboard */
+
+.board {
+  position: absolute;
+  height: 500px;
+  width: 600px;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  align-items: center;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.board h1 {
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  font-family: Gochi Hand, cursive;
+  color: white;
+}
+
+/*sub-board */
+
+.board .grids {
+  position: absolute;
+  height: 350px;
+  width: 500px;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  border-spacing: 30%;
+  align-content: space-between;
+}
+
+.board .grids {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  align-items: center;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 30px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.board .grids {
+  display: inline-grid;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  font-family: Gochi Hand, cursive;
+}
+
+#leaderBoard table {
+  width: 100;
+  border-collapse: collapse;
+}
+
+#leaderBoard th,
+td {
+  font-size: 45px;
+  text-align: center;
+  padding: 12px;
+  font-family: Gochi Hand, cursive;
+  color: white;
+}
+
+/*start screen */
+
+#gameCanvas {
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-height: 100%;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#player,
+#gamebg,
+#enemy_plant,
+#enemy_fly {
+  display: none;
+}
+
+.board .leaderBoard-table {
+  width: 100%;
+  border-collapse: collapse;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/*running cat img */
+
+.Gamescreen .hero {
+  width: 50px;
+  height: 150px;
+  background-image: url("/images/hero.gif");
+  position: absolute;
+  top: 86%;
+  left: 5%;
+}
+
+/* link to start the game */
+
+.Start a {
+  position: absolute;
+  font-size: 100px;
+  left: 30%;
+  top: 45%;
+  font-weight: 800;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  font-family: "Pixelify Sans", monospace;
+}
+#restartButton {
+  display: none;
+}

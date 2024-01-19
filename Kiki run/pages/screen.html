@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>screen</title>
+    <link rel="stylesheet" href="../stylesheet/style.css" />
+
+    <!--boxicons link-->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <section class="object">
+      <div class="logo">
+        <h1><a href="/Kiki run/index.html">~Kiki's Run~</a></h1>
+      </div>
+      <!--Navigation bar-->
+      <header>
+        <nav class="navlist">
+          <a href="/Kiki run/pages/login.html" target="_self" id="Login-page"
+            >Login/Register</a
+          >
+          <a
+            href="/Kiki run/pages/register.html"
+            target="_self"
+            id="Register-page"
+            >Logout</a
+          >
+          <a href="/Kiki run/pages/help.html" target="_self" id="Help-page"
+            >Help</a
+          >
+          <a
+            href="/Kiki run/pages/leaderboard.html"
+            target="_self"
+            id="Leaderboard-page"
+            >Leaderboard</a
+          >
+        </nav>
+      </header>
+      <!--main game-->
+      <canvas id="gameCanvas"></canvas>
+
+      <img src="/Kiki run/images/kitty.png" id="player" />
+
+      <button id="restartButton">Restart Game</button>
+      <script type="module" src="../js/index.js"></script>
+    </section>
+  </body>
+</html>
